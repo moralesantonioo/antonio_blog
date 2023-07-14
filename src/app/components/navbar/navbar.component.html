@@ -1,0 +1,34 @@
+<div class="general">
+    <div class="menu-mobile" *ngIf="!showMenu">
+        <h1 class="title">
+            <span class="first_letter">A</span>
+            <span class="body">ntonio Morales</span>
+        </h1>
+        <span class="icon material-symbols-outlined" (click)="openMenu()">
+            menu
+        </span>
+        <div class="nav-items">
+            <a routerLink="/blog">Blog</a>
+            <a routerLink="/sobre-mi">Sobre mi</a>
+            <a routerLink="/">Proyectos</a>
+        </div>
+    </div>
+    <div class="menu-mobile_body" *ngIf="showMenu">
+        <div class="animation">
+            <h1 class="title">
+                <span class="first_letter">A</span>
+                <span class="body">ntonio Morales</span>
+            </h1>
+            <div class="items">
+                <a routerLink="/blog" (click)="openMenu()">Blog</a>
+                <a routerLink="/sobre-mi" (click)="openMenu()">Sobre mi</a>
+                <a routerLink="/" (click)="openMenu()">Proyectos</a>
+            </div>
+            <div class="footer">
+                <span class="icon material-symbols-outlined" (click)="openMenu()">
+                    close
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
