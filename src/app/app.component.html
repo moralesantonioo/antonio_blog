@@ -1,8 +1,66 @@
-<div class="template">
-    <div class="template-body-navbar">
-        <app-navbar></app-navbar>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;1,400;1,600&family=Raleway:wght@200;300;500;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="general">
+        <div class="section_left">
+            <span class="texto">
+                Todo empezó de una forma muy difícil, éramos dos desconocidos los cuales con el tiempo se llegaron a querer.
+                Por favor, no te enojes si escribo algo fuera de lugar, créeme que lo intento, solo quiero escribirte algo lindo.
+                Te conocí sin saber que te ibas a convertir en una persona muy importante para mí, cada momento a tu lado ha sido
+                muy lindo, hubieron momentos buenos, momentos malos, pero muy por fuera de ello disfruto y soy feliz cuando estoy
+                a tu lado. Suelo ser muy raro, a veces muy callado (más de lo normal), otras muy alegre, otras veces un niño,
+                solo suelo ser yo mismo contigo. Me equivoco repentinas veces, tomo decisiones sin pensarlas o digo cosas de las
+                que me arrepiento, nunca lo hago con intención de lastimarte, créeme que es lo que menos quiero, pero sé que en
+                ciertas ocasiones lo he hecho y perdóname por ello. Eres muy importante para mí, no quiero tenerte lejos de mí,
+                quiero poder abrazarte, poder besarte, poder contarte mis cosas, reír juntos, llorar juntos, pelear también jeje,
+                lo quiero todo contigo y quiero que seas para de mi vida. Te quiero demasiado y siempre vas a estar en mi
+                corazón. No quiero que estemos alejados. ¿Recuerdas? Para siempre.
+            </span>
+            <img class="img" src="../assets/tattos.png" alt="">
+        </div>
+        <div class="section_rigth">
+            <h1 class="title">¿Quieres volver a intentarlo conmigo por muy difícil que sea?</h1>
+            <div class="section_btn">
+                <!-- Botón fijo -->
+                <button class="btn btn-success fixed-btn" data-toggle="modal" data-target="#rositaModal">SI QUIERO</button>
+                <button  id="btn1" class="posicion_normal btn btn-danger">NO QUIERO</button>
+            </div>
+        </div>
     </div>
-    <div class="router">
-        <router-outlet></router-outlet>
+
+    <!-- Modal para la imagen de la "rosita" -->
+    <div class="modal fade" id="rositaModal" tabindex="-1" role="dialog" aria-labelledby="rositaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rositaModalLabel">Besito</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del modal -->
+                    <img src="../assets/WhatsApp Image 2023-11-13 at 21.00.25.jpeg" class="img-fluid" alt="Rosita">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
     </div>
-</div> 
+</body>
+
+</html>
